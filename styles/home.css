@@ -1,0 +1,97 @@
+.home{
+  position: relative;
+  display: grid;
+  overflow: hidden;
+
+  background-image: url(../assets/Blur.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: appear 3s linear;
+
+  & header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-inline: 10rem;
+
+    & img{
+      width: 230px;
+    }
+    & button{
+      border: none;
+      border-radius: .5rem;
+      padding: .75rem 1.25rem;
+      background-color: var(--pink-dark);
+      color: inherit;
+    }
+  }
+  & > div{
+    display: grid;
+    max-width: 656px;
+    margin-top: 164px;
+    margin-inline: auto;
+    gap: 2rem;
+    & h1{
+      font: var(--title-lg);
+      text-align: center;
+    }
+    & p{
+      font: var(--body-lg);
+      text-align: center;
+      padding-inline: 44px;
+      color: var(--text-body);
+    }
+  }
+  & .hero-bg{
+    position: absolute;
+    max-width: 1440px;
+
+    height: 948px;
+    top: -3.5rem;
+    z-index: -1;
+  }
+
+  & article{
+    display: grid;
+    margin-top: 566px;
+    margin-inline: 7.5rem;
+    margin-bottom: 5rem;
+
+    animation: appear linear backwards;
+    animation-timeline: view();
+    animation-range: 100px 300px;
+
+    & img{
+      width: 5.5rem;
+      height: 5.5rem;
+      opacity: 0;
+
+      animation: imageSpotted linear both;
+      animation-timeline: view();
+      animation-range: 120px 300px;
+    }
+    & > img{
+      margin: 0 auto;
+    }
+
+    & > p {
+      font: var(--subtitle);
+      color: var(--text-body);
+      margin-inline: 2rem;
+
+      & span{
+        animation: spanColor linear both;
+      animation-timeline: view();
+      animation-range: 120px 300px;
+      }
+
+    }
+    & div{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

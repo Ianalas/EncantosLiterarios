@@ -1,0 +1,9 @@
+@import url(global.css);
+@import url(home.css);
+@import url(./know.css);
+@import url(./assinature.css);
+@import url(./footer.css);
+
+@import url(./anim/hero.css);
+@import url(./anim/pricing.css);
+@import url(./anim/book.css);

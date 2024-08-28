@@ -1,0 +1,58 @@
+.know{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  & header{
+    margin-top: 235px;
+    text-align: center;
+
+    & h2{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      font: var(--title-sm);
+      & i{
+        height: 2rem;
+        width: 2rem;
+        background-image: url(../assets/hero/star.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          height: 24px;
+          width: 24px;
+          inset: .25rem;
+
+          background-color: var(--pink-base);
+          filter: blur(30px);
+        }
+      }
+    }
+  }
+  
+  & > img{
+    width: 467px;
+    height: 617px;
+    margin: 222px auto;
+  }
+
+  & div.blur{
+    height: 900px;
+    width: 900px;
+
+    left: calc(50% - 900px/2);
+    top: calc(50% - 900px/2 + 38px);
+    background-color: var(--pink-dark);
+
+  }
+
+}
+
+
+
+
